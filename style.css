@@ -1,0 +1,161 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url("img/fundo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #010507;
+    color: antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-rows: 90px 90px 1fr;
+    justify-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #010507;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 158, 160, 0.397);
+}
+
+footer {
+    font-size: smaller;
+}
+
+/* Buttons */
+
+button, .button {
+    cursor: pointer;
+}
+
+.button, #to-do div button:first-child {
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+    background-image: url("img/icons/add_task.png");
+    height: 35px;
+    width: 40px;
+}
+
+.gemeos, #to-do div button:first-child {
+    background-color:rgba(95, 158, 160, 0.397);
+    margin: 2px;
+    padding: 7px 11px;
+    border: none;
+}
+
+.gemeos:hover, #to-do div button:first-child:hover {
+    border: solid 1px rgba(250, 235, 215, 0.356);
+    margin: 1px;
+}
+
+#to-do div button:active, .button:active {
+    background-color:rgba(95, 158, 160, 0.514);
+}
+
+.gemeos {
+    border-radius: 40px;
+    color: greenyellow;
+}
+
+#to-do div button:nth-child(4) {
+    color: red;
+}
+
+#to-do div button:first-child {
+    background-image: url("img/icons/edit_task.png");
+    border-radius: 3px;
+    margin: 2px;
+    height: 22px;
+    width: 21px;
+}
+
+.saveButton {
+    height: 25px;
+    background-color: rgba(95, 158, 160, 0);
+    border: none;
+    border-radius: 30px;
+    margin-right: -5px;
+}
+
+/* Inputs */
+
+.inputs {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25px;
+}
+
+.inputs input {
+    background-color: rgba(95, 158, 160, 0.397);
+    border: none;
+    padding: 5px 10px;
+    min-height: 25px;
+}
+
+#to-do div input {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+.inputs input:first-child {
+    min-width: 50%;
+    min-height: 25px;
+}
+
+.inputs input:first-child:focus, .inputs input:nth-child(2):focus, #to-do div input:focus {
+    outline-style: none;
+}
+
+.inputs input:nth-child(2) {
+    min-width: 20%;
+    min-height: 25px;
+}
+
+/* Task board */
+
+#to-do {
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Each task */
+
+#to-do div {
+    min-height: 35px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: rgba(95, 158, 160, 0.13);
+    margin: 15px;
+}
+
+#to-do div p {
+    margin: 10px 25px;
+    display: flex;
+    flex: 15;
+}
+
+#to-do div input {
+    min-height: 35px;
+}
+
+#to-do div input:first-child {
+    display: flex;
+    flex: 1;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="favicon.ico" href="https://cdn-icons-png.flaticon.com/512/3155/3155240.png">
+</head>
+<body>
+    <h1>My To-do List</h1>
+
+    <section class="inputs">
+        <input type="text" id="textoTask" placeholder="New Task..." onfocus="this.value=null" autocomplete="off" autofocus="true">
+        <input type="date" id="textoData">
+        <input type="button" value=" " onclick="addTask()" class="button">
+    </section>
+
+    <main id="to-do"></main>
+
+    <script src="script.js"></script>
+    <footer>© 2023 Madu >_<</footer>
+</body>
+</html>
