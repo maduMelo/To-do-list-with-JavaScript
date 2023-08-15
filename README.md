@@ -15,7 +15,7 @@ This project was created with HTML, CSS and JavaScript. The goal of the project 
 
 
 or you can just access the site where the project is being hosted:
-- https://reliable-sprinkles-d9d403.netlify.app/
+- https://enchanting-gaufre-512316.netlify.app/
 
 # Usage
 ![print de tela da réplica do YouTube](https://i.imgur.com/8Njt8uX.png) ‎ ‎
